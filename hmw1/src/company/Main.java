@@ -65,8 +65,8 @@ public class Main {
                 System.out.println("Enter ID: ");
                 var studId = scanner.nextInt();
                 for(PhoneBook st:studs){
-                    if(st.getId().equals(studId+1)){
-                        studs.remove(studId+1);
+                    if(st.getId().equals(studId)){
+                        studs.remove(studId-1);
                     }
                 }
             }
